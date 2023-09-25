@@ -9,13 +9,14 @@ project "imgui"
     {
         "*.h",
         "*.cpp",
-        "imgui_impl_glfw.cpp",
-        "imgui_impl_glfw.h",
+        "backends/imgui_impl_glfw.cpp",
+        "backends/imgui_impl_glfw.h",
     }
 
     includedirs
     {
-                
+        ".",
+        "../glfw/include"
     }
 
     filter "system:windows"
